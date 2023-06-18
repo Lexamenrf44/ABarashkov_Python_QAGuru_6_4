@@ -16,6 +16,7 @@ def test_greeting():
 
     # Проверяем результат
     assert output == "Привет, Анна! Тебе 25 лет."
+    print(output)
 
 
 def test_rectangle():
@@ -55,12 +56,14 @@ def test_circle():
 
     # Проверяем результат
     assert area == 1661.9025137490005
+    print(area)
 
     # TODO сосчитайте длину окружности
     length = 2 * pi * r
 
     # Проверяем результат
     assert length == 144.51326206513048
+    print(length)
 
 
 def test_random_list():
@@ -110,15 +113,7 @@ def test_dicts():
     second = [1, 2, 3, 4, 5]
 
     # TODO создайте словарь
-    dict(zip(first, second))
-
-    d = {
-        "a": 1,
-        "b": 2,
-        "c": 3,
-        "d": 4,
-        "e": 5
-    }
+    d = dict(zip(first, second))
 
     # Показать значение словаря
     print(d.values())
